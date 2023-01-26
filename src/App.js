@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
+
+// let nombre='ramon'
+
+let frutas=['manzana','pera','uva']
+
+let datos={
+  nombre:'raul',
+  apellido:'lopez',
+  edad:42
+}
+
+const {nombre,edad}=datos
+
+
+const evento=()=>{
+  console.log('hola mundo')
+}
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <h1> el apellido es {nombre} y su edad es {edad}</h1>
+        <button onClick={evento}>Hace click!</button>
     </div>
   );
 }
